@@ -428,7 +428,10 @@ If you do not have explicit permission to use Audit Agent on a system, do not in
 
 ## License
 
-Add your preferred license here.
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
 
 Example:
 
