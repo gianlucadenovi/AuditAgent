@@ -1,6 +1,13 @@
-# Audit Agent
+<p align="center">
+  <img src="auditagent.png" alt="auditagent logo" width="200"/>
+</p>
 
-Audit Agent is a lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled remote inspection of a host machine.
+<h1 align="center">Audit Agent</h1>
+<p align="center"><strong>Simple browser based KVM</strong></p>
+
+<p align="center">
+  Audit Agent is a lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled remote inspection of a host machine.
+</p>
 
 It provides a browser-based dashboard for capturing host screenshots, webcam frames, short audio clips, file previews/downloads, normal browser history, selected system file inspection, and basic host control actions.
 
