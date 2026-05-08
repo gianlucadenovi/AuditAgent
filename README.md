@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="auditagent.png" alt="auditagent logo" width="700"/>
+  <img src="auditagent.png" alt="auditagent logo" width="300"/>
 </p>
 
 <h1 align="center">Audit Agent</h1>
