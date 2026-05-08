@@ -152,6 +152,29 @@ AuditAgent/
   httplib.h
 ```
 
+
+## Build
+
+### Requirements
+
+- Windows 10 / 11
+- Visual Studio 2022 or compatible MSVC toolchain
+- CMake 3.20+
+- C++17
+- Windows SDK
+- JsonCpp
+- cpp-httplib
+- SQLite source included directly as `sqlite3.c`
+
+### Build with CMake
+
+From the project root:
+
+```powershell
+cmake -S . -B build -A x64
+cmake --build build --config Release
+
+
 ---
 
 ## First launch
