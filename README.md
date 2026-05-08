@@ -409,7 +409,21 @@ POST /api/system-sec/read
 POST /api/system-sec/reset
 POST /api/host/reboot
 ```
+---
+## Disclaimer
 
+Audit Agent is provided for lawful, authorized, and ethical use only.
+
+The software is intended for diagnostics, testing, system administration, KVM workflows, and controlled inspection of systems that you own or are explicitly authorized to access.
+
+By using this software, you agree that:
+
+- You are solely responsible for how you use, modify, deploy, or distribute this code.
+- You will not use this software to access, monitor, inspect, capture, or control any system without proper authorization.
+- The authors, contributors, and copyright holders are not responsible for any misuse, damage, data loss, privacy violation, legal consequence, or unauthorized activity resulting from the use of this software.
+- This software is provided “as is,” without warranty of any kind.
+
+If you do not have explicit permission to use Audit Agent on a system, do not install or run it.
 ---
 
 ## License
