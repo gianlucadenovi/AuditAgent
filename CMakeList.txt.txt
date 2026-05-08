@@ -1,0 +1,111 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(AuditAgent LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_executable(AuditAgent
+    main.cpp
+
+    AuditWebServer.h
+    AuditWebServer.cpp
+
+    AuditAgentUI.h
+    AuditAgentUI.cpp
+
+    ApiKeyManager.h
+    ApiKeyManager.cpp
+
+    ScreenCapture.h
+    ScreenCapture.cpp
+
+    FileBrowser.h
+    FileBrowser.cpp
+
+    ZipBuilder.h
+    ZipBuilder.cpp
+
+    BrowserHistory.h
+    BrowserHistory.cpp
+
+    WebcamCapture.h
+    WebcamCapture.cpp
+
+    AudioCapture.h
+    AudioCapture.cpp
+
+    HostControl.h
+    HostControl.cpp
+
+    SystemSecFile.h
+    SystemSecFile.cpp
+
+    sqlite3.h
+    sqlite3.c
+
+    httplib.h
+)
+
+target_compile_definitions(AuditAgent PRIVATE
+    WIN32_LEAN_AND_MEAN
+    NOMINMAX
+    _CRT_SECURE_NO_WARNINGS
+)
+
+target_include_directories(AuditAgent PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+# JsonCpp
+#
+# Option 1: If JsonCpp is installed through vcpkg or available to CMake,
+# this should work automatically.
+find_package(jsoncpp CONFIG QUIET)
+
+if(jsoncpp_FOUND)
+    target_link_libraries(AuditAgent PRIVATE JsonCpp::JsonCpp)
+else()
+    # Option 2: Fallback for manually installed JsonCpp.
+    #
+    # Update these paths if JsonCpp is installed somewhere else.
+    target_include_directories(AuditAgent PRIVATE
+        "C:/vcpkg/installed/x64-windows/include"
+    )
+
+    target_link_directories(AuditAgent PRIVATE
+        "C:/vcpkg/installed/x64-windows/lib"
+    )
+
+    target_link_libraries(AuditAgent PRIVATE
+        jsoncpp.lib
+    )
+endif()
+
+target_link_libraries(AuditAgent PRIVATE
+    user32.lib
+    gdi32.lib
+
+    mfplat.lib
+    mf.lib
+    mfreadwrite.lib
+    mfuuid.lib
+
+    windowscodecs.lib
+
+    ole32.lib
+    uuid.lib
+    bcrypt.lib
+)
+
+set_source_files_properties(sqlite3.c PROPERTIES LANGUAGE C)
+
+if(MSVC)
+    target_compile_options(AuditAgent PRIVATE
+        /EHsc
+        /W3
+    )
+
+    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT AuditAgent)
+endif()
