@@ -1,6 +1,25 @@
-# Audit Agent
+<p align="center">
+  <img src="auditagent.png" alt="Audit Agent logo" width="180">
+</p>
 
-Audit Agent is a lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled remote inspection of a host machine.
+<h1 align="center">Audit Agent</h1>
+
+<p align="center">
+  Lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled host inspection.
+</p>
+
+
+<p align="center">
+  <img alt="OS" src="https://img.shields.io/badge/OS-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+  <img alt="Language" src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+  <img alt="Build" src="https://img.shields.io/badge/Build-CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white">
+  <img alt="Webserver" src="https://img.shields.io/badge/Webserver-cpp--httplib-FF6F00?style=for-the-badge">
+  <img alt="JSON" src="https://img.shields.io/badge/JSON-JsonCpp-8A2BE2?style=for-the-badge">
+  <img alt="Database" src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
+  <img alt="Windows APIs" src="https://img.shields.io/badge/APIs-Media%20Foundation%20%7C%20WASAPI%20%7C%20GDI-00A4EF?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-lightgrey?style=for-the-badge">
+</p>
+
 
 It provides a browser-based dashboard for capturing host screenshots, webcam frames, short audio clips, file previews/downloads, normal browser history, selected system file inspection, and basic host control actions.
 
