@@ -1,25 +1,6 @@
-<p align="center">
-  <img src="auditagent.png" alt="auditagent logo" width="200"/>
-</p>
+# Audit Agent
 
-<h1 align="center">Audit Agent</h1>
-<p align="center"><strong>Simple browser based KVM</strong></p>
-
-<p align="center">
-  Audit Agent is a lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled remote inspection of a host machine.
-</p>
-
-<p align="center">
-  <img alt="Language" src="https://img.shields.io/badge/language-C%2B%2B17-blue">
-  <img alt="Build" src="https://img.shields.io/badge/build-CMake-brightgreen">
-  <img alt="Backends" src="https://img.shields.io/badge/backends-CUDA%20%7C%20Metal%20%7C%20Vulkan%20%7C%20CPU-orange">
-  <img alt="Format" src="https://img.shields.io/badge/models-GGUF-purple">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-lightgrey">
-</p>
-
-
-
-
+Audit Agent is a lightweight Windows diagnostics webserver for authorized local testing, KVM workflows, and controlled remote inspection of a host machine.
 
 It provides a browser-based dashboard for capturing host screenshots, webcam frames, short audio clips, file previews/downloads, normal browser history, selected system file inspection, and basic host control actions.
 
@@ -398,4 +379,6 @@ Example:
 ```text
 Copyright (c) Esacode.
 All rights reserved.
+```
+
 ```
