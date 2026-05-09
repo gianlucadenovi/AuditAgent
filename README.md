@@ -95,7 +95,8 @@ system_ak.txc
 - Requires confirmation prompts in the dashboard.
 
 ---
-#Architecture:
+####Architecture
+
 This software is meant to be used in local networks, connecting directly to the host.
 ```
 Remote PC running AuditAgent
