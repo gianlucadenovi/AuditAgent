@@ -95,6 +95,29 @@ system_ak.txc
 - Requires confirmation prompts in the dashboard.
 
 ---
+#Architecture:
+This software is meant to be used in local networks, connecting directly to the host.
+```
+Remote PC running AuditAgent
+        ^
+        |
+        V
+Your browser connects here
+```
+
+If you wish to reach the host from outside you would have to implement an outbound connection setting up a proper triangulation server.
+
+```
+Remote PC running AuditAgent
+        |
+        | outbound connection
+        v
+Your public VPS / relay server
+        ^
+        |
+Your browser connects here
+```
+---
 
 ## Requirements
 
